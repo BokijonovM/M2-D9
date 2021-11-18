@@ -32,18 +32,6 @@
     100% {opacity:1;}
   }
 
-  .home-h1{
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 10%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-    width: 60%;
-    color: white;
-  }
-
   .card-artist{
       font-weight: bold; 
   }
@@ -56,4 +44,55 @@
     position: absolute;
     border-bottom-left-radius: 0%;
     border-top-left-radius: 0%;
+    }
+    table {
+        font-size: 1.125rem;
+    }
+
+    table tbody>:nth-child(odd) {
+        background-color: white;
+        color: black;
+    }
+    table tbody>:nth-child(even) {
+        background-color: white;
+        color: greenyellow;
+    }
+    .img-hover-zoom {
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .img-hover-zoom img {
+        transition: transform 0.9s ease;
+    }
+
+    .img-hover-zoom:hover img {
+        transform: scale(1.5);
+    }
+    .btn-lg {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .btn-lg:hover {
+        border: none;
+    }
+
+    .addTrackBtn:after {
+        content: '';
+        left: -6px;
+        top: -4px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        border-radius: 5px;
+        background-color: #5c636a;
+        border-color: #5c636a;
+        transition: width height 1s ease-in;
+    }
+
+    .addTrackBtn:hover:after {
+        width: 110%;
+        height: 115%;
     }

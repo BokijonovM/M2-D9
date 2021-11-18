@@ -109,10 +109,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 2 albums per row when you are on a small screen
         -->
         <div class="fade-in-image">
-            <img src="https://media.istockphoto.com/photos/rock-concert-picture-id161838634?b=1&k=20&m=161838634&s=170667a&w=0&h=2AvMIuz9XXpLxrg0qE4MoX365rOnKV_3A7kEPgJNy1A=" alt="" width="100%" height="100%">
-            <div class="home-h1">
-                <h1 class="">Welcome <br/> Music Albums</h1>
-            </div>
+            <img src="https://wallpapercave.com/wp/wp6910126.jpg" alt="" width="100%" height="100%">
         </div>
 
         <div class="jumbotron jumbotron-fluid">
@@ -209,6 +206,142 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                 </div>
             </section>
     </div>
+
+    <!--
+
+    -->
+   
+    <div class="container mt-5">
+        <h3 class="text-center text-dark">Maher Zain</h3>
+        
+
+        <table class="table text-white">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>The Power</td>
+                    <td>2:36</td>
+                    <td class="btn btn-primary w-100 text-black">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Medina</td>
+                    <td>3:08</td>
+                    <td class="btn btn-light w-100 text-white">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Good Day</td>
+                    <td>3:51</td>
+                    <td class="btn btn-primary w-100 text-black">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>True Love</td>
+                    <td>4:16</td>
+                    <td class="btn btn-light w-100 text-white">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Let It Go</td>
+                    <td>5:26</td>
+                    <td class="btn btn-primary w-100 text-black">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>The Way of Love</td>
+                    <td>3:54</td>
+                    <td class="btn btn-light w-100 text-white">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Close to You</td>
+                    <td>6:00</td>
+                    <td class="btn btn-primary w-100 text-black">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>One day</td>
+                    <td>4:03</td>
+                    <td class="btn btn-light w-100 text-white">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>I am Alive</td>
+                    <td>2:58</td>
+                    <td class="btn btn-primary w-100 text-black">Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>ByMy Side</td>
+                    <td>3:49</td>
+                    <td class="btn btn-light w-100 text-white">Delete</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- EXERCISE 6
+            Add an "Add Track" button under the tracklist of the album. 
+            It should have a nice shadow transition when its hovered (with the box-shadow property) 
+            to look like as if the button was elevating itself.
+        -->
+
+        <button type="button" class="btn btn-secondary btn-lg addTrackBtn " data-toggle="modal"
+            data-target="#trackModal">Add Track</button>
+    </div>
+
+    <div class="modal fade" id="trackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="trackModal">Add Track</h5>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group row input-group-md mb-3">
+                        <div class="col-6 mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Track Number</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+
+                        <div class="col-6">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Track Title</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+                        <div class="col-6">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Track Duration</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Add Track</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <!-- EXERCISE 4
@@ -303,83 +436,86 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col row">
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">  
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">  
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">  
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 ">
-                <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
-              </div>
-        </div>
-        
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col row m-0 p-0">
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">  
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">  
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">  
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+                <div class="card col-sm-12 col-md-8 col-lg-8 col-xl-2 border-0 pl-0 img-hover-zoom">
+                    <img src="https://1.bp.blogspot.com/-P_HOGAAMAKk/WwFG7RnUIvI/AAAAAAAADZk/rVUv7XRsFp4ZSZ6ngqVaw_aOhQZi-OAigCLcBGAs/s1600/one%2Bvoice%2Bonly.jpg" class="card-img-top" alt="...">
+                  </div>
+            </div>
+            
+          </div>
+    </div>
+    
 
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
