@@ -349,6 +349,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
+        
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h2 class="display-4">Album review</h2>
@@ -549,14 +550,25 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             counts the albums and applies the number in the area of the footer you've previously decided.
         -->
         <script>
-            let deleteBtn = document.querySelectorAll(".btn-all");
 
-            deleteBtn.forEach((e) => {
-                e.addEventListener("click", () => {
-                    e.parentNode.parentNode.remove();
-                });
-            });
-        </script>
+            window.onload = function () {
+                // Jumbotron fade-in exercise:
+                let jumbotronElement = document.querySelector(".jumbotron");
+                jumbotronElement.classList.add("fadeIn");
+    
+    
+                // Tracklist delete exercise:
+                let tableTrackList = document.querySelectorAll("tbody tr>:last-child");
+                console.log(tableTrackList);
+    
+                for (track of tableTrackList) {
+                    track.addEventListener("click", function removeTrack(event) {
+                        let trackToRemove = event.target.parentElement;
+                        trackToRemove.style.display = "none";
+                    })
+                }
+            }
+            </script>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
