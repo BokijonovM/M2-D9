@@ -50,3 +50,10 @@
   .card-year{
       font-weight: bold;
   }
+  .card-badge{
+      top: 0;
+      left: 0;
+    position: absolute;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    }
