@@ -60,14 +60,20 @@
     .img-hover-zoom {
         overflow: hidden;
         cursor: pointer;
+        width: 100%;
     }
 
     .img-hover-zoom img {
-        transition: transform 0.9s ease;
+        transition: transform 5.9s ease;
     }
 
     .img-hover-zoom:hover img {
         transform: scale(1.5);
+        width: 120%;
+        position:absolute;
+        background-color: transparent;
+        transition: transform 5.9s ease;
+
     }
     .btn-lg {
         position: relative;
@@ -96,3 +102,15 @@
         width: 110%;
         height: 115%;
     }
+   
+
+
+
+
+
+
+
+
+
+
+    
